@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <!--Estilo CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main class="container">
+        <h1>Calculadora de IMC</h1>
+
+        <div class="form">
+            <label for="altura">Altura (m):</label>
+            <input type="number" id="altura" placeholder="Ex: 1.75" step="0.01">
+
+            <label for="peso">Peso (Kg):</label>
+            <input type="number" id="peso" placeholder="Ex: 70" step="0.1">
+
+            <button onclick="calcularIMC()">Calcular</button>
+        </div>
+
+        <div id="resultado" class="resultado"></div>
+
+        <!--Tabela com IMC ideal por idade-->
+        <section class="tabela-imc">
+            <h2>IMC Ideal por Idade</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Faixa Etária</th>
+                        <th>IMC Ideal</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>18 a 24 anos</td>
+                        <td>19 a 24</td>
+                    </tr>
+
+                    <tr>
+                        <td>25 a 34 anos</td>
+                        <td>20 a 25</td>
+                    </tr>
+
+                    <tr>
+                        <td>35 a 44 anos</td>
+                        <td>21 a 26</td>
+                    </tr>
+
+                    <tr>
+                        <td>45 a 54 anos</td>
+                        <td>22 a 27</td>
+                    </tr>
+
+                    <tr>
+                        <td>55 a 64 anos</td>
+                        <td>23 a 28</td>
+                    </tr>
+
+                    <tr>
+                        <td>65 anos ou mais</td>
+                        <td>24 a 29</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!--Seção de importância do IMC-->
+        <section class="importancia-imc">
+            <h2>Qual a importância do IMC?</h2>
+            <p>
+                O Índice de Massa Corporal (IMC) é uma medida reconhecida mundialmente para avaliar se uma pessoa está com o peso adequado em relação à sua altura.
+                Ele é uma ferramenta simples e eficaz para identificar casos de desnutrição, sobrepeso e obesidade, que podem estar associados a diversos problemas de saúde, como:
+            </p>
+            <ul>
+                <li>Doenças cardiovasculares</li>
+                <li>Hipertensão</li>
+                <li>Diabetes tipo 2</li>
+                <li>Problemas respiratórios</li>
+                <li>Dores articulares e na coluna</li>
+            </ul>
+            <p>
+                Manter o IMC dentro dos valores recomendados ajuda a promover uma vida mais saudável e prevenir doenças. No entanto, ele deve ser considerado como parte de uma avaliação mais ampla, feita por um profissional de saúde.
+            </p>
+        </section>
+    </main>
+
+    <!--Js-->
+    <script src="script.js"></script>
+</body>
+</html>

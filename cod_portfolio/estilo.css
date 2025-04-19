@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #f0f0f0;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #00ffcc;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: bold;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #00ffcc;
+    margin-bottom: 1rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skill {
+    background: #1f1f1f;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.projeto {
+    background: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projeto h3 {
+    margin-bottom: 0.5rem;
+}
+
+.projeto a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #00ffcc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.projeto a:hover {
+    color: #00bfa6;
+}
+
+.contato p {
+    margin: 0.5rem 0;
+}
+
+.contato a {
+    color: #00ffcc;
+    text-decoration: none;
+}
+
+footer {
+    background: #1f1f1f;
+    text-align: center;
+    padding: 1rem;
+    color: #999;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 2rem 1rem;
+    }
+    .skills {
+        flex-direction: column;
+    }
+}
