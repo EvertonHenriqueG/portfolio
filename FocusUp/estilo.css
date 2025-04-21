@@ -164,3 +164,10 @@
     }
   
 }
+
+@media (max-width: 360px) {
+  nav a {
+    font-size: 13px;
+    padding: 3px 6px;
+  }
+}
