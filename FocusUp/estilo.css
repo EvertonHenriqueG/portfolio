@@ -41,6 +41,7 @@
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
+    font-size: 16px;
   }
   
   nav a:hover {
@@ -168,6 +169,5 @@
 @media (max-width: 360px) {
   nav a {
     font-size: 13px;
-    padding: 3px 6px;
   }
 }
