@@ -22,19 +22,19 @@ header h1 {
 
 nav {
     margin-top: 1rem;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 2px;
+    font-size: 16px;
 }
 
 nav a {
     color: #00ffcc;
     text-decoration: none;
-    margin: 0 5px;
+    margin: 0 4px;
     font-weight: bold;
-    padding: 5px 8px;
-    white-space: nowrap; /* impede quebrar palavra */
+    padding: auto;
+    
 }
 
 section {
