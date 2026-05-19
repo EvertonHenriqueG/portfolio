@@ -4,32 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Everton Henrique | Desenvolvedor Web</title>
-
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="estilo.css">
-
-  <!-- Favicon -->
   <link rel="shortcut icon" href="favicon_portfolio.png" type="image/x-icon">
 </head>
-
 <body>
-  <header>
-    <h1>Everton Henrique Gomes da Silva</h1>
-    <p>Desenvolvedor | Programador</p>
 
-    <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#habilidades">Habilidades</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#contato">Contato</a>
-    </nav>
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="header-text">
+        <h1>Everton Henrique</h1>
+        <p class="header-sub">Desenvolvedor Web<span class="blink">_</span></p>
+      </div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+    <div class="header-progress"></div>
   </header>
 
   <main>
-    <section id="sobre">
+    <section id="sobre" class="fade-in">
       <h2>Sobre Mim</h2>
       <p>
         Sou um desenvolvedor web apaixonado por tecnologia, focado em criar experiências modernas,
@@ -37,7 +38,7 @@
       </p>
     </section>
 
-    <section id="habilidades">
+    <section id="habilidades" class="fade-in">
       <h2>Habilidades</h2>
       <div class="skills">
         <div class="skill">HTML5</div>
@@ -48,65 +49,83 @@
       </div>
     </section>
 
-    <section id="projetos">
+    <section id="projetos" class="fade-in">
       <h2>Projetos</h2>
-
       <div class="projetos">
+
         <div class="projeto">
-          <h3>FocusUp</h3>
-          <p>
-            Uma landing page desenvolvida com HTML e CSS puro, para apresentar um app de produtividade
-            baseado na técnica Pomodoro.
-          </p>
+          <div class="projeto-top">
+            <h3>FocusUp</h3>
+            <div class="projeto-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+            </div>
+          </div>
+          <p>Landing page desenvolvida com HTML e CSS puro para apresentar um app de produtividade baseado na técnica Pomodoro.</p>
           <a href="FocusUp/index.html" target="_blank" rel="noopener noreferrer">
-            Visualizar Projeto
+            <span>Visualizar Projeto</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
 
         <div class="projeto">
-          <h3>Calculadora de IMC</h3>
-          <p>
-            Uma calculadora interativa para calcular o IMC (Índice de Massa Corporal) com HTML, CSS e JavaScript.
-          </p>
+          <div class="projeto-top">
+            <h3>Calculadora de IMC</h3>
+            <div class="projeto-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+          <p>Calculadora interativa para calcular o Índice de Massa Corporal com HTML, CSS e JavaScript.</p>
           <a href="calculadora_imc/index.html" target="_blank" rel="noopener noreferrer">
-            Visualizar Projeto
+            <span>Visualizar Projeto</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
 
         <div class="projeto">
-          <h3>TecPrime</h3>
-          <p>
-            Landing page institucional do meu projeto TecPrime, desenvolvida com HTML, CSS e JavaScript.
-          </p>
+          <div class="projeto-top">
+            <h3>TecPrime</h3>
+            <div class="projeto-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JS</span>
+            </div>
+          </div>
+          <p>Landing page institucional do projeto TecPrime, desenvolvida com HTML, CSS e JavaScript.</p>
           <a href="https://evertonhenriqueg.github.io/TecPrime/" target="_blank" rel="noopener noreferrer">
-            Visualizar Projeto
+            <span>Visualizar Projeto</span>
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
+
       </div>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="fade-in">
       <h2>Contato</h2>
       <div class="contato">
-        <p>Email:
-          <a href="mailto:evertoninfon@gmail.com">evertoninfon@gmail.com</a>
-        </p>
-        <p>GitHub:
-          <a href="https://github.com/EvertonHenriqueG" target="_blank" rel="noopener noreferrer">
-            github.com/EvertonHenriqueG
-          </a>
-        </p>
-        <p>LinkedIn:
-          <a href="https://www.linkedin.com/in/everton-henrique-841772310/" target="_blank" rel="noopener noreferrer">
-            linkedin.com/in/everton-henrique-841772310
-          </a>
-        </p>
+        <a href="mailto:evertoninfon@gmail.com" class="contato-item">
+          <span class="contato-label">Email</span>
+          <span class="contato-valor">evertoninfon@gmail.com</span>
+        </a>
+        <a href="https://github.com/EvertonHenriqueG" target="_blank" rel="noopener noreferrer" class="contato-item">
+          <span class="contato-label">GitHub</span>
+          <span class="contato-valor">github.com/EvertonHenriqueG</span>
+        </a>
+        <a href="https://www.linkedin.com/in/everton-henrique-841772310/" target="_blank" rel="noopener noreferrer" class="contato-item">
+          <span class="contato-label">LinkedIn</span>
+          <span class="contato-valor">linkedin.com/in/everton-henrique-841772310</span>
+        </a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 - Everton Henrique. Todos os direitos reservados.</p>
+    <p>© 2025 Everton Henrique. Todos os direitos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
